@@ -1,0 +1,12 @@
+{
+	Ripples for water, whatever
+
+	04Mar90
+
+	A1 = degreee of waviness
+}
+wave_x = wave_mag * noise3a(Px, Py, Pz);
+wave_y = wave_mag * noise3b(Px, Py, Pz);
+wave_z = wave_mag * noise3c(Px, Py, Pz);
+
+wave_mag = min(A1, .5*Rdot);
